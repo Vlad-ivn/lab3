@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+
+        <form method="post" class="registration-form">
+            <h1 class="title">Pizza Shop 2.0</h1>
+
+            <table class="form-table">
+                <tr>
+                    <td class="column-span">Name</td>
+                    <td><input type="text" required placeholder="Enter" class="enter__name"></td>
+                </tr>
+                <tr>
+                    <td class="column-span"> Pizza Topping</td>
+                    <td>
+                        <div class="block__topping-radio">
+                            <label for="radio1">
+                                <input type="radio" checked name="extras" id="radio1" value=" Supreme">
+                                Supreme
+                            </label>
+                            <br>
+                            <label for="radio2">
+                                <input type="radio" name="extras" id="radio2" value=" Vegeterian">
+                                Vegeterian
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column-span">Pizza Sauce</td>
+                    <td>
+                        <div class="block__topping-option">
+                            <select name="extras" id="extras" class="extras">
+                                <option>Buffalo</option>
+                                <option>Pesto</option>
+                                <option>Hummus</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column-span">Optional Extras</td>
+                    <td>
+                        <div class="block__topping-checkbox">
+                            <label for="topping1">
+                                <input type="checkbox" id="topping1" name="topping-checkbox" value="pepperoni">
+                                Pepperoni
+                            </label><br>
+                            <label for="topping2">
+                                <input type="checkbox" id="topping2" name="topping-checkbox" value="mushrooms">
+                                Mushrooms
+                            </label><br>
+                            <label for="topping3">
+                                <input type="checkbox" id="topping3" name="topping-checkbox" value="onions">
+                                Onions
+                            </label><br>
+                        </div>
+                    </td>
+                </tr>
+                
+                
+            </table>
+
+            <p class="title_delivery block">Delivery Instructions</p>
+            <textarea placeholder="Enter" class="textarea"></textarea><br>
+            <button class="submit" name="register" type="submit">Send my Order</button>
+        </form>
+    </div>
+</body>
+
+</html>
